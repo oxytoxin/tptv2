@@ -41,7 +41,7 @@
                     <div>
                         <div>
                             <img class="w-auto h-11"
-                                src="https://sksu.edu.ph/wp-content/uploads/2021/04/sksu1.png"
+                                src="{{ asset('images/sksu1.png') }}"
                                 alt="Workflow">
                         </div>
                         <div class="mt-20">

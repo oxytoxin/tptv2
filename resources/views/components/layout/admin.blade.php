@@ -95,7 +95,7 @@
                     <div class="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
                         <div class="flex items-center flex-shrink-0 px-4">
                             <img class="w-auto h-8"
-                                src="https://sksu.edu.ph/wp-content/uploads/2021/04/sksu1.png"
+                                src="{{ asset('images/sksu1.png') }}"
                                 alt="SKSU">
                         </div>
                         <nav class="px-2 mt-5 space-y-1">
@@ -242,7 +242,7 @@
                 <div class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
                     <div class="flex items-center flex-shrink-0 px-4 space-x-3">
                         <img class="w-auto h-8"
-                            src="https://sksu.edu.ph/wp-content/uploads/2021/04/sksu1.png"
+                            src="{{ asset('images/sksu1.png') }}"
                             alt="Workflow">
                         <h1 class="text-2xl text-gray-700">
                             SKSU-TPT

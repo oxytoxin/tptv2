@@ -3,7 +3,7 @@
         <x-slot name="logo">
         </x-slot>
         <div class="flex items-center mb-5 space-x-3">
-            <img src="https://sksu.edu.ph/wp-content/uploads/2021/04/sksu1.png"
+            <img src="{{ asset('images/sksu1.png') }}"
                 class="h-14"
                 alt="">
             <div class="text-2xl font-bold text-center text-gray-600">
@@ -97,7 +97,7 @@
             <div class="w-full max-w-sm mx-auto lg:w-96">
                 <div>
                     <img class="w-auto h-12"
-                        src="https://sksu.edu.ph/wp-content/uploads/2021/04/sksu1.png"
+                         src="{{ asset('images/sksu1.png') }}"
                         alt="Workflow">
                     <h2 class="mt-6 text-3xl text-gray-900">Sign in to your account</h2>
                 </div>
