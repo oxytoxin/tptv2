@@ -72,6 +72,7 @@
                         label="Actual Photo"
                         accept="image/*"
                         type="file"
+                        hint="If you encounter an error while uploading your photo, please try to reduce the size of your photo to less than 2MB."
                         corner-hint="Use white background with name tag" />
                     <div wire:loading.flex
                         wire:target="photo">
