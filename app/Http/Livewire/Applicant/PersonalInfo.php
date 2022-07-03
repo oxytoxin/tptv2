@@ -27,7 +27,7 @@ class PersonalInfo extends Component
         'religion'=>'required',
         'nationality'=>'required',
         'citizenship'=>'required',
-        'photo'=>'required|image|mimes:png,jpg|max:2000',
+        'photo'=>'required|image|mimes:png,jpg|max:100000',
         'sex'=>'required',
     ];
     protected $validationAttributes=['type_id'=>'type'];
