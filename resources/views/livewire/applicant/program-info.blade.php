@@ -34,7 +34,7 @@
                             <fieldset>
                                 <legend class="text-lg font-medium text-gray-900">{{ $campus->name }}</legend>
                                 <div class="mt-4 space-y-2 border-t border-b border-gray-200 divide-y divide-gray-200">
-                                    @foreach ($campus->programs as $key => $program)
+                                    @foreach ($campus->programs->where('is_offered', 1) as $key => $program)
                                         <div wire:key="{{ $key }}"
                                             class="flex items-center">
                                             @if (auth()->user()->step == 2)
@@ -89,7 +89,7 @@
                                     <legend class="text-lg font-medium text-gray-900">{{ $campus->name }}</legend>
                                     <div
                                         class="mt-4 space-y-2 border-t border-b border-gray-200 divide-y divide-gray-200">
-                                        @foreach ($campus->programs as $key => $program)
+                                        @foreach ($campus->programs->where('is_offered', 1) as $key => $program)
                                             <div wire:key="{{ $key }}"
                                                 class="flex items-center">
                                                 <input id="input-{{ $key }}"
