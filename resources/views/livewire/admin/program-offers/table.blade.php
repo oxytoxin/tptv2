@@ -10,7 +10,7 @@
             <x-button positive
                 icon="plus"
                 x-on:click="$dispatch('create');">
-                Create Examination
+                Create Program
             </x-button>
         </x-slot>
         <x-slot name="heading">
