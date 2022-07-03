@@ -18,7 +18,7 @@ class AccountSeeder extends Seeder
             'role_id' => 1,
             'name' => 'SKSU TPT',
             'email' => 'sksutpt@gmail.com',
-            'password' => bcrypt('123456'),
+            'password' => bcrypt('sksutptv2'),
         ]);
     }
 }
