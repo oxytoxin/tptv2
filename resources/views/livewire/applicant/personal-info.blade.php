@@ -70,6 +70,7 @@
                     </div>
                     <x-input wire:model="photo"
                         label="Actual Photo"
+                        accept="image/*"
                         type="file"
                         corner-hint="Use white background with name tag" />
                     <div wire:loading.flex
