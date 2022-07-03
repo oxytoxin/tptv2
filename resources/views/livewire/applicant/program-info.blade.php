@@ -37,7 +37,7 @@
                                     @foreach ($campus->programs->where('is_offered', 1) as $key => $program)
                                         <div wire:key="{{ $key }}"
                                             class="flex items-center">
-                                            @if (auth()->user()->step == 2)
+                                            @if (auth()->user()->step == '2')
                                                 <input id="input-{{ $key }}"
                                                     wire:model="first_priority_program"
                                                     name="input-{{ $key }}"
@@ -92,13 +92,15 @@
                                         @foreach ($campus->programs->where('is_offered', 1) as $key => $program)
                                             <div wire:key="{{ $key }}"
                                                 class="flex items-center">
-                                                <input id="input-{{ $key }}"
-                                                    wire:model="second_priority_program"
-                                                    name="input-{{ $key }}"
-                                                    value="{{ $program->id }}"
-                                                    type="radio"
-                                                    @checked($program->id == $second_priority_program)
-                                                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
+                                                @if (auth()->user()->step == '2')
+                                                    <input id="input-{{ $key }}"
+                                                        wire:model="second_priority_program"
+                                                        name="input-{{ $key }}"
+                                                        value="{{ $program->id }}"
+                                                        type="radio"
+                                                        @checked($program->id == $second_priority_program)
+                                                        class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
+                                                @endif
                                                 <label for="push"
                                                     class="block ml-3 text-sm font-medium text-gray-700">
                                                     {{ $program->name }}
