@@ -78,7 +78,6 @@
         </div>
 
         <div class="flex justify-around">
-
             <nav x-data="{
                 has_personal_information: {{ $has_personal_information }},
                 has_school_information: {{ $has_school_information }},
@@ -87,7 +86,7 @@
                 class="flex items-center justify-center"
                 x-on:done-pi.window="has_personal_information = 1"
                 x-on:done-si.window="has_school_information = 1"
-                x-on:done-pi.window="has_program_choice = 1"
+                x-on:done-pc.window="has_program_choice = 1"
                 aria-label="Progress">
                 <p class="text-sm font-medium">Form <span x-text="current"></span> of 3</p>
                 <ol role="list"
@@ -98,7 +97,7 @@
                             <span class="sr-only">Step 1</span>
                         </button>
                     </li>
-                    <li x-on:click="current=2">
+                    <li x-on:click="has_personal_information ? current=2 : ''">
                         <button class="block rounded-full"
                             x-bind:class="has_school_information ? 'bg-theme w-4 h-4' : 'bg-gray-200 w-2.5 h-2.5'"
                             aria-current="step">
@@ -106,7 +105,7 @@
                         </button>
                     </li>
 
-                    <li x-on:click="current=3">
+                    <li x-on:click="has_school_information ? current=3 :''">
                         <button class="block rounded-full"
                             x-bind:class="has_program_choice ? 'bg-theme w-4 h-4' : 'bg-gray-200 w-2.5 h-2.5'"
                             aria-current="step">
@@ -115,7 +114,6 @@
                     </li>
                 </ol>
             </nav>
-
         </div>
     </div>
 </x-layout.applicant>
