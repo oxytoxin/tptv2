@@ -17,132 +17,106 @@ class CampusSeeder extends Seeder
         $campus = Campus::create([
                 'name'=>"ACCESS Campus"
             ]);
-            
-            $campus->programs()->create([
-                'name'=>"Bachelor in Elementary Education (Level III)"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor in Secondary Education major in: (Level III) English"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor in Secondary Education major in: (Level III) Filipino"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor in Secondary Education major in: (Level III) Science"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor in Secondary Education major in: (Level III) Mathematics"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor in Secondary Education major in: (Level III) Social Studies"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Physical Education"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Nursing (Level II)"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Midwifery"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Medical Technology"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Criminology (Level II)"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Security Management"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Agriculture"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Diploma in Teaching"
-            ]);
-        
+        $campus->programs()->create([
+            'name'=>"Bachelor in Elementary Education"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor in Secondary Education major in: Filipino"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor in Secondary Education major in: Science"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor in Secondary Education major in: Mathematics"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor in Secondary Education major in: Social Studies"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor in Physical Education"
+        ]);
+        $campus->programs()->create([
+            'name'=>"Bachelor of Science in Agriculture"
+        ]);
             $campus = Campus::create([
                 'name'=>"Isulan Campus"
             ]);
+
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Civil Engineering (Level II)"
+                'name'=>"Bachelor of Science in Electronics and Communication Engineering"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Computer Engineering (Level III)"
+                'name'=>"Bachelor of Science in Computer Engineering"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Computer Science (Level II)"
+                'name'=>"Bachelor of Science in Computer Science"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Information Technology (Level III)"
+                'name'=>"Bachelor of Science in Information Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Information System (Level II)"
+                'name'=>"Bachelor of Science in Information System"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Drafting Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Drafting Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Food Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Food Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Automotive Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Automotive Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Electrical Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Electrical Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Electronic Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Electronics Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Industrial Technology (Major in Civil Technology)"
+                'name'=>"Bachelor of Science in Industrial Technology major in: Civil Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Drafting Technology)"
+                'name'=>"Bachelor in Technical-Vocational Teacher Education major in: Drafting Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Food Service Management)"
+                'name'=>"Bachelor in Technical-Vocational Teacher Education major in: Food Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Automotive Technology)"
+                'name'=>"Bachelor in Technical Teacher Education major in: Automotive Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Electrical Technology)"
+                'name'=>"Bachelor in Technical-Vocational Teacher Education major in: Electrical Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Electronic Technology)"
+                'name'=>"Bachelor in Technical-Vocational Teacher Education major in: Electronics Technology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor in Technical-Vocational Teacher Education (Major in Civil Technology)"
+                'name'=>"Bachelor in Technical-Vocational Teacher Education major in: Civil Technology"
             ]);
 
             $campus = Campus::create([
                 'name'=>"Tacurong Campus"
             ]);
-
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Biology (Level III)"
+                'name'=>"Bachelor of Science in Biology"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Arts in Economics (Level II)"
+                'name'=>"Bachelor of Arts in Economics"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Arts in Political Science (Level II)"
+                'name'=>"Bachelor of Arts in Political Science"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Hospitality Management (Level III)"
+                'name'=>"Bachelor of Science in Hospitality Management"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Entrepreneurship (Level II)"
+                'name'=>"Bachelor of Science in Entrepreneurship"
             ]);
             $campus->programs()->create([
-                'name'=>"Bachelor of Science in Accountancy (Level III)"
+                'name'=>"Bachelor of Science in Accountancy"
             ]);
             $campus->programs()->create([
                 'name'=>"Bachelor of Science in Accounting Information System"
-            ]);
-            $campus->programs()->create([
-                'name'=>"Bachelor of Science in Environmental Science"
             ]);
             $campus->programs()->create([
                 'name'=>"Bachelor of Science in Tourism Management"
@@ -150,28 +124,28 @@ class CampusSeeder extends Seeder
             $campus->programs()->create([
                 'name'=>"Bachelor of Science in Management Accounting"
             ]);
-     
+    
         $campus = Campus::create([
             "name" => "Kalamansig Campus"
         ]);
 
         $campus->programs()->create([
-            "name" => "Bachelor of Science in Fisheries (Level III)"
+            "name" => "Bachelor of Science in Fisheries"
         ]);
         $campus->programs()->create([
-            "name" => "Bachelor in Secondary Education major in: (Level II) English"
+            "name" => "Bachelor in Secondary Education major in: English"
         ]);
         $campus->programs()->create([
-            "name" => "Bachelor in Secondary Education major in: (Level II) Filipino"
+            "name" => "Bachelor in Secondary Education major in: Filipino"
         ]);
         $campus->programs()->create([
-            "name" => "Bachelor in Secondary Education major in: (Level II) Science"
+            "name" => "Bachelor in Secondary Education major in: Science"
         ]);
         $campus->programs()->create([
-            "name" => "Bachelor in Elementary Education (Level I)"
+            "name" => "Bachelor in Elementary Education"
         ]);
         $campus->programs()->create([
-            "name" => "Bachelor of Science in Information Technology (Level II)"
+            "name" => "Bachelor of Science in Information Technology"
         ]);
         $campus->programs()->create([
             "name" => "Bachelor of Science in Biology"
@@ -179,46 +153,38 @@ class CampusSeeder extends Seeder
         $campus->programs()->create([
             "name" => "Bachelor of Science in Criminology"
         ]);
+
         
-
-
-
-
-
-
-
         $campus = Campus::create([
             "name" => "Bagumbayan Campus"
         ]);
-
         $campus->programs()->create([
-            'name' => 'Bachelor of Science in Agribusiness (Level II) '
+            "name" => "Bachelor of Science in Agribusiness"
         ]);
         $campus->programs()->create([
-            'name' => 'Bachelor of Technology and Livelihood Education major in Agri-fishery Arts'
+            "name" => "Bachelor in Technology and Livelihood Education major in Agri-fishery"
         ]);
 
-    
+
         $campus = Campus::create([
             "name" => "Palimbang Campus"
         ]);
+        $campus->programs()->create([
+            "name" => "Bachelor in Elementary Education"
+        ]);
+        $campus->programs()->create([
+            "name" => "Bachelor of Science in Agribusiness"
+        ]);
 
-        $campus->programs()->create([
-            'name' => 'Bachelor in Elementary Education (Level II) '
-        ]);
-        $campus->programs()->create([
-            'name' => 'Bachelor of Science in Agribusiness'
-        ]);
 
         $campus = Campus::create([
             "name" => "Lutayan Campus"
         ]);
         $campus->programs()->create([
-            'name' => 'Bachelor in Elementary Education (Level II) '
+            "name" => " Bachelor in Elementary Education"
         ]);
         $campus->programs()->create([
-            'name' => 'Bachelor of Science in Agriculture'
+            "name" => "Bachelor of Science in Agriculture"
         ]);
-
     }
 }

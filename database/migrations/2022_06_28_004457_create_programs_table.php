@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('campus_id')->constrained();
             $table->string('abbreviation')->nullable();
             $table->string('name');
-            $table->boolean('is_offered')->default(false);
+            $table->boolean('is_offered')->default(true);
             $table->timestamps();
         });
     }
