@@ -22,8 +22,6 @@ class ProgramInfo extends Component
         $this->loadProgramInformation();
     }
 
-
-
     public function render()
     {
         return view('livewire.applicant.program-info');
