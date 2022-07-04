@@ -4,8 +4,10 @@ namespace App\Http\Livewire\Admin\Applications;
 
 use Livewire\Component;
 use App\Models\{Examination,Application,User};
+use Livewire\WithPagination;
 class Table extends Component
 {
+    use WithPagination;
     public $examination;
     public $step=['4','5'],$search='';
     public $type='';
@@ -38,7 +40,7 @@ class Table extends Component
                                                 'program'
                                             ],
                                         ]])
-                                        ->get(),
+                                        ->paginate(10),
         ]);
     }
 
