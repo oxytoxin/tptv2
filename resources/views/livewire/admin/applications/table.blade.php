@@ -110,7 +110,7 @@
 
             </x-slot>
             <x-slot name="footer">
-                {{-- {{ $examinations->links() }} --}}
+                {{ $applications->links() }}
             </x-slot>
         </x-table.main>
     </div>
