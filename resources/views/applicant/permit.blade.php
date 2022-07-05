@@ -25,6 +25,8 @@
         href="{{ mix('css/app.css') }}">
 
     @livewireStyles
+    @wireUiScripts
+
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"
         defer></script>
@@ -44,11 +46,14 @@
         <h1>
             TPT PERMIT
         </h1>
-        <x-button x-on:click="printDiv('printable')"
-            icon="printer"
-            positive>
-            Print
-        </x-button>
+        <div class="flex space-x-3">
+            <livewire:applicant.update-photo />
+            <x-button x-on:click="printDiv('printable')"
+                icon="printer"
+                positive>
+                Print
+            </x-button>
+        </div>
     </div>
     <div id="printable"
         class="px-3 sm:px-0">
@@ -211,6 +216,10 @@
             </div>
         </div>
     </div>
+    <x-notifications z-index="z-50" />
+    <x-dialog z-index="z-50"
+        blur="md"
+        align="center" />
     @livewireScripts
 </body>
 
