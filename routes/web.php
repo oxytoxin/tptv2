@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{HomeController, PrintPermitController};
+use App\Http\Controllers\Admin\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,9 +37,8 @@ Route::middleware([
 
 
 Route::prefix('/admin')->middleware(['auth:sanctum','is_admin',config('jetstream.auth_session'),'verified'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('admin.dashboard');
+    
+    Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('admin.dashboard');
     Route::get('/examinations', function () {
         return view('admin.examinations');
     })->name('admin.examinations');
@@ -51,6 +51,9 @@ Route::prefix('/admin')->middleware(['auth:sanctum','is_admin',config('jetstream
             'examination_id' => $id,
         ]);
     })->name('admin.manage-examination.applications');
+     Route::get('/users', function () {
+        return view('admin.users');
+    })->name('admin.users');
 });
 
 Route::prefix('/applicant')->middleware(['auth:sanctum','is_applicant',config('jetstream.auth_session'),'verified'])->group(function () {

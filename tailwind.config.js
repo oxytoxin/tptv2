@@ -23,7 +23,11 @@ module.exports = {
             },
             colors: {
                 'theme': '#10B981'
+            },
+            backgroundImage: {
+                'card-d': "url('/images/card-d.png')"
             }
+
         },
     },
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Layouts;
+namespace App\View\Components\List;
 
 use Illuminate\View\Component;
 
-class Applicant extends Component
+class Data extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class Applicant extends Component
      */
     public function render()
     {
-        return view('components.layouts.applicant');
+        return view('components.list.data');
     }
 }
