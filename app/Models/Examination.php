@@ -13,4 +13,9 @@ class Examination extends Model
     {
         return $this->hasMany(Application::class);
     }
+
+    public function results()
+    {
+        return $this->hasMany(Result::class);
+    }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Admin\Applications\GenerateReport;
 use Livewire\Component;
 use App\Exports\PermitReport;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Models\{Result};
 class AllReadyToExam extends Component
 {
     // report type
@@ -14,9 +15,14 @@ class AllReadyToExam extends Component
     public $report_modal=false;
     public $ready_to_download=false;
     public $selected_report ;
+    public $examination;
     public function render()
     {
-        return view('livewire.admin.applications.generate-report.all-ready-to-exam');
+        return view('livewire.admin.applications.generate-report.all-ready-to-exam',[
+            'result_count' => Result::query()
+                                        ->where('examination_id', $this->examination)
+                                        ->count(),
+        ]);
     }
 
     public function updatedSelectedReport()

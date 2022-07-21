@@ -1,3 +1,3 @@
-<div class="col-span-1 ">
+<div>
     {{ $slot }}
 </div>

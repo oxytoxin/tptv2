@@ -1,4 +1,5 @@
-<div>
+<div class="grid space-y-2">
+
     <x-table.main>
         <x-slot name="leftAction">
             <div class="flex space-x-3">

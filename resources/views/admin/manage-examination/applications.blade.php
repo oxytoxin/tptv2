@@ -79,7 +79,7 @@
         </div>
         <div class="px-4 mx-auto mt-10 max-w-7xl sm:px-6 md:px-8">
             <div x-show="action=='none'">
-                <livewire:admin.applications.generate-report.all-ready-to-exam />
+                <livewire:admin.applications.generate-report.all-ready-to-exam :examination="$examination_id" />
                 <livewire:admin.applications.table :examination="$examination_id" />
             </div>
             <div x-cloak
@@ -91,4 +91,5 @@
                 <livewire:admin.applications.view-payment />
             </div>
         </div>
+        <livewire:admin.applications.upload-result :examination="$examination_id" />
 </x-layout.admin>

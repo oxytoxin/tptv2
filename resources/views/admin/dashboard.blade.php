@@ -102,40 +102,39 @@
                                 <h1>Recent Activity</h1>
                             </div>
                             <div class="mt-5 ">
-                                <x-list.panel>
-                                    @for ($i = 0; $i < 5; $i++)
-                                        <x-list.item row="5">
-                                            <x-list.data>
-                                                Test
-                                            </x-list.data>
-                                            <x-list.data>
-                                                Test
-                                            </x-list.data>
-                                            <x-list.data>
-                                                Test
-                                            </x-list.data>
-                                            <x-list.data>
-                                                Test
-                                            </x-list.data>
-                                            <x-list.data>
-                                                <div class="flex justify-end">
-                                                    <x-button.circle flat>
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="h-6 w-6"
-                                                            fill="none"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            stroke-width="2">
-                                                            <path stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                                                        </svg>
-                                                    </x-button.circle>
-                                                </div>
-                                            </x-list.data>
-                                        </x-list.item>
-                                    @endfor
-                                </x-list.panel>
+                                <div class="space-y-2">
+                                    <div
+                                        class="grid grid-cols-5 py-4 items-center px-5 bg-gray-100 rounded-lg hover:bg-gray-200 ease-in-out duration-150">
+                                        <div>
+                                            Test
+                                        </div>
+                                        <div>
+                                            Test
+                                        </div>
+                                        <div>
+                                            Test
+                                        </div>
+                                        <div>
+                                            Test
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-end">
+                                                <x-button.circle flat>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="h-6 w-6"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke="currentColor"
+                                                        stroke-width="2">
+                                                        <path stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                                    </svg>
+                                                </x-button.circle>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </x-card>
                     </div>
