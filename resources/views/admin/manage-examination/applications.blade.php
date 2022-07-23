@@ -79,8 +79,30 @@
         </div>
         <div class="px-4 mx-auto mt-10 max-w-7xl sm:px-6 md:px-8">
             <div x-show="action=='none'">
-                <livewire:admin.applications.generate-report.all-ready-to-exam :examination="$examination_id" />
-                <livewire:admin.applications.table :examination="$examination_id" />
+                <x-card shadow="shadow-none"
+                    padding="px-2 py-2 md:px-2 "
+                    class="border border-gray-300 rounded-lg">
+                    <div class="flex space-x-3">
+                        <x-button x-on:click="$dispatch('open-upload-result-modal')">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 text-green-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                            </svg>
+                            Upload Result
+                        </x-button>
+                        <livewire:admin.applications.generate-report.download-result :examination="$examination_id" />
+                        <livewire:admin.applications.generate-report.all-ready-to-exam :examination="$examination_id" />
+                    </div>
+                </x-card>
+                <div class="mt-4">
+                    <livewire:admin.applications.table :examination="$examination_id" />
+                </div>
             </div>
             <div x-cloak
                 x-show="action=='view-info'">

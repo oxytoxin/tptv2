@@ -14,4 +14,9 @@ class Permit extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function result()
+    {
+        return $this->hasOne(Result::class,'examinee_number','examinee_number');
+    }
 }
